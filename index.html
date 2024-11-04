@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management</h1>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="productId">Product ID (required):</label>
+                <input type="text" class="form-control" id="productId" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Product Description (required):</label>
+                <input type="text" class="form-control" id="productDescription" required>
+            </div>
+            <div class="form-group">
+                <label for="productCategory">Product Category (required):</label>
+                <select class="form-control" id="productCategory" required>
+                    <option value="">Select a category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Home Goods">Home Goods</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productUOM">Unit of Measure (required):</label>
+                <select class="form-control" id="productUOM" required>
+                    <option value="">Select UOM</option>
+                    <option value="pcs">Pieces</option>
+                    <option value="kg">Kilograms</option>
+                    <option value="ltr">Liters</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Product Price (required):</label>
+                <input type="number" class="form-control" id="productPrice" required>
+            </div>
+            <div class="form-group">
+                <label for="productWeight">Product Weight (optional):</label>
+                <input type="number" class="form-control" id="productWeight">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="jsonOutput" class="mt-4"></div>
+    </div>
+
+    <!-- Group Members Contributions -->
+    <!-- HTML Structure: Jordan Borrero -->
+    <!-- Bootstrap: -->
+    <!-- jQuery: -->
+</body>
+</html>
